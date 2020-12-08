@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 live update</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center mt-5">Covid 19 live update</h1>
+        <h1 class="text-left mt-5" id="region"></h1>
+        <span class="date"></span>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Cases</th>
+                    <th>Deaths</th>
+                    <th>Recovered</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="today-data">
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Total Cases</th>
+                    <th>Total Deaths</th>
+                    <th>Recovered</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="total-data">
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="updateData()" class="btn btn-danger btn-block">Update data</button>
+    </div>
+
+</body>
+
+</html>
